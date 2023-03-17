@@ -75,7 +75,7 @@ export class News extends Component {
     fetchMoreData = async () => {
 
         let temp= ++this.state.page;
-        this.setState({ page: temp })
+        // this.setState({ page: temp })
         // const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${this.state.page}&pageSize=${this.props.pageSize}`;
         const url1 = `https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/ImageSearchAPI?q=${this.props.category}&pageNumber=${this.state.page}&pageSize=${this.props.pageSize}&autoCorrect=true&country=${this.props.country}`;
         this.setState({ loading: true })
